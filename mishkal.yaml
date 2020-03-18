@@ -6,12 +6,12 @@ runs:
   insecurely: true
 
 lives:
-  in: /srv/mary-tts-stts
+  in: /srv/mishkal
    
 variants:
   production:
     apt:
-      packages: [ python-setuptools ]
+      packages: [ ca-certificates, python-setuptools ]
     python:
         version: python2.7
         requirements: [ requirements-more-mishkal.txt, src/mishkal/requirements.txt ]
